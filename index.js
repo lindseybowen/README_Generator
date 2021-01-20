@@ -15,7 +15,7 @@ inquirer.prompt([
     {
         type: 'input',
         name:'url',
-        message: "Please provide the URL or a demo of your deployed application.",
+        message: "If your project is deployed, please enter its URL. If not, please leave this blank.",
     },
     {
         type: 'input',
@@ -68,4 +68,38 @@ inquirer.prompt([
     }else if(response.license === 'GPL'){
         badge = '[![GPL](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)';
     }
-   
+    const data = `
+# ${response.name}
+${badge}
+## Table of Contents
+* [Description](#description)
+* [URL](#url)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+## Description 
+${response.description}
+## URL
+[Click here to see the live site!](${response.url})
+![Screenshot Deployed Website](${response.image})
+## Installation
+${response.installation}
+## Usage
+${response.usage}
+## Contributing
+${response.contribution}
+## Tests
+${response.tests}
+## Questions
+Please contact me below with any questions you have about the appiction.
+* Github: https://github.com/${response.questions1}
+* Email: ${response.questions2}
+    `
+    fs.writeFile('README.md', data, (error) => {
+
+        error ? console.error(error) : console.log('success!')
+    })
+})
