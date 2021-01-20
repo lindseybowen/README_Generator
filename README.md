@@ -17,8 +17,6 @@ It’s important to have a high-quality README. But you don't want to spend too 
 ![Screenshot Deployed Website](README.png)
 ## Installation
 To install, download or clone this repository to your machine. Once you do that you need to install inquirer via NPM.
-## Tests
-No Test required
 ## Questions
 Please contact me below with any questions you have about the appiction.
 * Github: https://github.com/lindseybowen
