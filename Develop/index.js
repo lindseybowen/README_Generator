@@ -58,4 +58,14 @@ inquirer.prompt([
         name: 'questions2',
         message: 'What is your email so other developers can contact you with questions?',
     }
-])
+]).then((response) => {
+    console.log(response)
+    let badge;
+    if(response.license === 'MIT'){
+        badge = '[![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+    }else if(response.license === 'AGPL'){
+        badge = '[![AGPL](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)';
+    }else if(response.license === 'GPL'){
+        badge = '[![GPL](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)';
+    }
+    
