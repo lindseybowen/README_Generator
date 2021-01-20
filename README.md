@@ -5,10 +5,7 @@
 * [Description](#description)
 * [URL](#url)
 * [Installation](#installation)
-* [Credits](#credits)
 * [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
 * [Questions](#questions)
 ## Description 
 It’s important to have a high-quality README. But you don't want to spend too much time on the README. This application will create a read me right in your terminal. It will ask you a series of questions to generate the README. 
