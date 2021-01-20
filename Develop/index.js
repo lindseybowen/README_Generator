@@ -58,3 +58,4 @@ inquirer.prompt([
         name: 'questions2',
         message: 'What is your email so other developers can contact you with questions?',
     }
+])
