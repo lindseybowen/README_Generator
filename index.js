@@ -29,8 +29,8 @@ inquirer.prompt([
     },
     {
         type: 'input',
-        name: 'usage',
-        message: 'What do you want the user to know before using your application?',
+        name: 'credits',
+        message: 'Describe, who, if anyone, helped or contributed to this project.',
     },
     {
         type: 'input',
@@ -75,7 +75,7 @@ ${badge}
 * [Description](#description)
 * [URL](#url)
 * [Installation](#installation)
-* [Usage](#usage)
+* [Credits](#credits)
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
@@ -87,7 +87,7 @@ ${response.description}
 ![Screenshot Deployed Website](${response.image})
 ## Installation
 ${response.installation}
-## Usage
+## Credits
 ${response.usage}
 ## Contributing
 ${response.contribution}
